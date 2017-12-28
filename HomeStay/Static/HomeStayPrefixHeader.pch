@@ -1,0 +1,150 @@
+//
+//  HomeStayPrefixHeader.pch
+//  HomeStay
+//
+//  Created by Q房通 on 2017/11/28.
+//  Copyright © 2017年 Q房通. All rights reserved.
+//
+
+#ifndef HomeStayPrefixHeader_pch
+#define HomeStayPrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+//MARK:-自定义Log
+#ifdef DEBUG
+#define Log(...) NSLog(__VA_ARGS__)
+#else
+#define Log(...)
+#endif
+
+//测试环境打包
+#define DEBUG_BUILD 1
+
+#if DEBUG_BUILD
+    #define PACKAGE_ONLINE 0
+#else
+    #define PACKAGE_ONLINE 1
+#endif
+
+
+//MARK:--基本常量--
+#import "HSContentStatic.h"
+#import "HSURLStatic.h"
+#import "HSCommonMethod.h"
+
+//MARK:--IQKeyboardManager.h
+#import "IQKeyboardManager.h"
+
+//MARK:--NSObject+JsonTool.h
+#import "NSObject+JsonTool.h"
+
+//MARK:-SDWebImage
+#import "UIImageView+WebCache.h"
+#import "UIButton+WebCache.h"
+
+// define this constant if you want to use Masony without the 'mas_' prefix
+#define MAS_SHORTHAND
+// define this constant if you want to enable auto_boxing for default syntax
+#define MAS_SHORTHAND_GLOBALS
+//MARK:-Masonry.h
+#import "Masonry.h"
+
+//MARK:-MJExtension.h
+#import "MJExtension.h"
+
+//MARK:-AFNetworking.h
+#import "AFNetworking.h"
+
+//MARK:--MJRefresh.h
+#import "MJRefresh.h"
+
+//MARK:--NSString+Extension.h
+#import "NSString+Extension.h"
+
+//MARK:--MBProgressHUD.h
+#import "MBProgressHUD.h"
+#import "MBProgressHUD+MJ.h"
+#import "MBProgressHUD+Utility.h"
+
+//MARK:--HSNetworkManager.h
+#import "HSNetworkManager.h"
+#import "HSNetworkMsgHander.h"
+
+//MARK:--UMeng
+#import <UMAnalytics/MobClick.h>
+#import <UMPush/UMessage.h>
+#import <UserNotifications/UserNotifications.h>
+#import <UMCommon/UMCommon.h>
+#import <UMCommon/UMConfigure.h>
+#import <UMErrorCatch/UMErrorCatch.h>
+//#import <UMErrorCatch/UMErrorCatchHeader.h>
+
+//MARK:--SDCycleScrollView.h
+#import "SDCycleScrollView.h"
+
+//MARK:--WXApi.h
+#import "WXApi.h"
+#import "WXApiObject.h"
+
+#import <TencentOpenAPI/QQApiInterface.h>
+#import <TencentOpenAPI/TencentOAuth.h>
+#import <TencentOpenAPI/sdkdef.h>
+
+
+//MARK:--Tool
+#import "NSDictionary+Extension.h"
+#import "NSArray+Extension.h"
+#import "NSDate+Utilities.h"
+#import "UIImage+Extension.h"
+#import "UISearchBar+Extension.h"
+#import "NSString+Extension.h"
+#import "UINavigationBar+background.h"
+#import "NSMutableAttributedString+Extension.h"
+
+//MARK:--View
+#import "HSStarView.h"
+#import "HSOrderView.h"
+#import "HSBaiduMapView.h"
+#import "HSAddImageView.h"
+#import "HSAlertView.h"
+#import "HSButton.h"
+
+//MARK:--TZImagePickerController.h
+#import "TZImagePickerController.h"
+//MARK:--显示大图
+#import "HSShowBigImageController.h"
+
+
+//MARK:--百度地图
+#import <BaiduMapAPI_Base/BMKBaseComponent.h>//引入base相关所有的头文件
+#import <BaiduMapAPI_Map/BMKMapComponent.h>//引入地图功能所有的头文件
+#import <BaiduMapAPI_Search/BMKSearchComponent.h>//引入检索功能所有的头文件
+#import <BaiduMapAPI_Cloud/BMKCloudSearchComponent.h>//引入云检索功能所有的头文件
+#import <BaiduMapAPI_Location/BMKLocationComponent.h>//引入定位功能所有的头文件
+#import <BaiduMapAPI_Utils/BMKUtilsComponent.h>//引入计算工具所有的头文件
+#import <BaiduMapAPI_Radar/BMKRadarComponent.h>//引入周边雷达功能所有的头文件
+
+
+#endif /* HomeStayPrefixHeader_pch */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
